@@ -1,61 +1,88 @@
 # 🌱 AgroStat Insight v1.0
 > **Plateforme d'Intelligence Artificielle pour l'Optimisation des Rendements Agricoles.**
 
-![GitHub language count](https://img.shields.io/github/languages/count/Danielisprogrammer/KENGNE_TACHAGO_DANIEL_VAHID__23U2590_AgroStat-Insight?style=for-the-badge)
-![GitHub repo size](https://img.shields.io/github/repo-size/Danielisprogrammer/KENGNE_TACHAGO_DANIEL_VAHID__23U2590_AgroStat-Insight?style=for-the-badge)
+---
+
+## 🖼️ Aperçu du Projet
+*(Remplacez le lien ci-dessous par le chemin de votre capture d'écran une fois ajoutée au dépôt)*
+
+![Capture d'écran de l'application](https://via.placeholder.com/800x450?text=Aperçu+AgroStat+Insight+v1.0)
 
 ---
 
-## 🎯 Présentation du Projet
-AgroStat Insight est une solution de **Data Science** permettant de transformer les données brutes de terrain en décisions stratégiques. Grâce à l'intégration de la **Régression Linéaire**, l'application prédit les récoltes futures en fonction des intrants.
-
-### 🚀 Fonctionnalités Clés
-- 📊 **Dashboard Interactif** : Visualisation en temps réel via [Plotly](https://plotly.com/python/).
-- 🧠 **Moteur d'Analyse (IA)** : Calcul automatique des coefficients de corrélation.
-- 🗄️ **Base de Données SQLite** : Persistance des données locale et sécurisée.
-- 📱 **Interface Responsive** : Développée avec [Streamlit](https://streamlit.io/).
+## 🎯 Présentation
+AgroStat Insight est une solution de **Data Science** conçue pour aider les exploitants agricoles à transformer leurs données de terrain en décisions stratégiques. L'application permet d'analyser la corrélation entre les intrants (engrais) et les résultats (rendements) via des modèles prédictifs.
 
 ---
 
 ## 🛠️ Stack Technique
-| Technologie | Utilisation |
+
+| Technologie | Rôle |
 | :--- | :--- |
-| **Python 3.12** | Langage Coeur |
-| **Streamlit** | Interface Utilisateur (UI) |
-| **Scikit-Learn** | Modélisation Prédictive (IA) |
-| **Pandas** | Manipulation de données |
-| **SQLAlchemy** | Gestion de la base de données |
+| **Python 3.12** | Langage de programmation principal |
+| **Streamlit** | Framework pour l'interface utilisateur (UI) |
+| **Scikit-Learn** | Moteur d'IA et de Régression Linéaire |
+| **Pandas & NumPy** | Traitement et analyse de données |
+| **Plotly** | Visualisations graphiques interactives |
+| **SQLite** | Système de gestion de base de données local |
 
 ---
 
 ## ⚙️ Installation et Lancement
 
-Suivez ces étapes dans l'ordre pour configurer le projet sur votre machine locale (Linux/Ubuntu) :
+Suivez ces étapes de manière séquentielle pour configurer votre environnement de travail :
 
-### 1️⃣ Clonage du Dépôt
-Commencez par récupérer le code source depuis GitHub :
+### 1️⃣ Étape 1 : Clonage du Dépôt
+### 1️⃣ Étape 1 : Clonage du Dépôt
+Récupérez le code source depuis GitHub :
+
 ```bash
 git clone [https://github.com/Danielisprogrammer/KENGNE_TACHAGO_DANIEL_VAHID__23U2590_AgroStat-Insight.git](https://github.com/Danielisprogrammer/KENGNE_TACHAGO_DANIEL_VAHID__23U2590_AgroStat-Insight.git)
-cd KENGNE_TACHAGO_DANIEL_VAHID__23U2590_AgroStat-Insight
-2️⃣ Configuration de l'EnvironnementIl est recommandé d'utiliser un environnement virtuel pour isoler les dépendances :Bash# Création de l'environnement
-python3 -m venv venv
-
-# Activation (Linux/Ubuntu)
-source venv/bin/activate
-3️⃣ Installation des DépendancesInstallez toutes les bibliothèques nécessaires listées dans le fichier requirements.txt :Bashpip install --upgrade pip
-pip install -r requirements.txt
-4️⃣ Lancement de l'ApplicationUne fois l'installation terminée, lancez le serveur local Streamlit :Bashstreamlit run app.py
-🧠 Méthodologie StatistiqueLe projet repose sur la Régression Linéaire Simple. L'équation de prédiction est modélisée sous la forme :$$y = ax + b$$Où :$y$ : Rendement prédit (Variable dépendante)$x$ : Quantité d'engrais (Variable indépendante)$a$ : Coefficient de pente (Impact de l'engrais)$b$ : Ordonnée à l'origineLe score $R^2$ est utilisé pour valider la fiabilité statistique du modèle.👨‍💻 DéveloppeurKENGNE TACHAGO DANIEL VAHID🆔 Matricule : 23U2590🏫 Niveau : Université - Informatique L2🔗 Profil : GitHubProjet réalisé dans le cadre du Travail Pratique de Programmation Python - 2026
----
-
-### Comment le mettre à jour sur GitHub ?
-
-1.  **Ouvre ton fichier `README.md`** dans VS Code.
-2.  **Efface tout** et colle le code ci-dessus.
-3.  **Enregistre.**
-4.  **Envoie la mise à jour** avec ces commandes :
+```
 
 ```bash
-git add README.md
-git commit -m "Docs: Structuration professionnelle du README en étapes"
-git push
+cd KENGNE_TACHAGO_DANIEL_VAHID__23U2590_AgroStat-Insight
+```
+
+---
+
+### 2️⃣ Étape 2 : Configuration de l'Environnement
+
+Créez et activez un environnement virtuel :
+
+```bash
+python3 -m venv venv
+```
+
+```bash
+source venv/bin/activate
+Bashsource venv/bin/activate
+``` 
+
+## 3️⃣ Étape 3 : Installation des Dépendances
+
+Installez toutes les bibliothèques nécessaires à l'exécution du projet :
+
+```bash 
+Bashpip install --upgrade pip
+```
+```bash 
+Bashpip install -r requirements.txt
+```
+
+## 4️⃣ Étape 4 : Lancement de l'ApplicationDémarrez le serveur local Streamlit pour visualiser l'application :Bashstreamlit run app.py
+
+### 🧠 Méthodologie Statistique 
+
+Le moteur d'analyse repose sur la Régression Linéaire Simple. 
+
+L'équation de prédiction est modélisée sous la forme :
+$$y = ax + b$$ 
+Détails des variables :$y$ : Rendement prédit (Variable dépendante)$x$ : Quantité d'engrais utilisée (Variable indépendante)$a$ : Coefficient de pente (Impact marginal de l'engrais)$b$ : Ordonnée à l'origine (Rendement sans engrais) 
+La fiabilité du modèle est validée par le calcul du coefficient de détermination $R^2$ et la corrélation de Pearson.👨‍💻 
+
+```bash
+Développeur: KENGNE TACHAGO DANIEL VAHID
+🆔 Matricule : 23U2590
+🏫 Niveau : Université - Informatique L2🔗 Profil : Mon GitHubProjet réalisé dans le cadre du Travail Pratique de Programmation Python - Avril 2026
+```
