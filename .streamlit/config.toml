@@ -1,0 +1,11 @@
+[theme]
+primaryColor = "#2ECC71" # Vert Émeraude
+backgroundColor = "#0E1117" # Dark Background
+secondaryBackgroundColor = "#1F2937"
+textColor = "#FFFFFF"
+font = "sans serif"
+    
+[server]
+headless = true
+enableCORS = false
+enableXsrfProtection = false
