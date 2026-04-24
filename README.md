@@ -31,23 +31,29 @@ AgroStat_Insight/
 ⚙️ Installation et Lancement
 Cloner le projet :
 
-Bash
-git clone [https://github.com/ton-pseudo/AgroStat_Insight.git](https://github.com/ton-pseudo/AgroStat_Insight.git)
+```bash
+git clone [https://github.com/Danielisprogrammer/KENGNE_TACHAGO_DANIEL_VAHID__23U2590_AgroStat-Insight.git]
+
+```bash
 cd AgroStat_Insight
+
 Créer l'environnement virtuel :
 
-Bash
+```bash
 python -m venv venv
 source venv/bin/activate  # Sur Linux/Mac
+
 Installer les dépendances :
 
-Bash
+```bash
 pip install -r requirements.txt
 Lancer l'application :
 
-Bash
+``bash
 streamlit run app.py
+
 🧠 Méthodologie Statistique
 L'application utilise le coefficient de Corrélation de Pearson pour mesurer le lien entre l'engrais et le rendement, ainsi qu'une Régression Linéaire Simple pour fournir une équation de prévision fiable.
 
+```bash
 Développé avec passion par Daniel Kengne Étudiant en Informatique (L2) - Passionné par le développement Full-Stack et l'IA.
