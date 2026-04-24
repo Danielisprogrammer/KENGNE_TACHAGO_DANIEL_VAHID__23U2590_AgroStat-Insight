@@ -2,7 +2,8 @@
 > **Plateforme d'Intelligence Artificielle pour l'Optimisation des Rendements Agricoles.**
 
 ---
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://kengne-tachago-daniel-vahid-23u2590-agrostat-insight.streamlit.app/)
+## 🌐 Application en Ligne
+[![Déployer sur Streamlit](https://img.shields.io/badge/Accéder%20à%20l'App-AgroStat%20Insight-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://kengne-tachago-daniel-vahid-23u2590-agrostat-insight.streamlit.app/)
 
 
 ## 🖼️ Aperçu du Projet
