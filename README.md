@@ -1,59 +1,61 @@
 # 🌱 AgroStat Insight v1.0
-> **Intelligence Artificielle et Analyse de Données pour l'Optimisation Agricole.**
+> **Plateforme d'Intelligence Artificielle pour l'Optimisation des Rendements Agricoles.**
 
-AgroStat Insight est une application web de **Data Science** conçue pour aider les agriculteurs et ingénieurs agronomes à suivre la santé de leurs parcelles et à prédire les rendements grâce à la puissance de la régression linéaire.
+![GitHub language count](https://img.shields.io/github/languages/count/Danielisprogrammer/KENGNE_TACHAGO_DANIEL_VAHID__23U2590_AgroStat-Insight?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/Danielisprogrammer/KENGNE_TACHAGO_DANIEL_VAHID__23U2590_AgroStat-Insight?style=for-the-badge)
 
+---
 
+## 🎯 Présentation du Projet
+AgroStat Insight est une solution de **Data Science** permettant de transformer les données brutes de terrain en décisions stratégiques. Grâce à l'intégration de la **Régression Linéaire**, l'application prédit les récoltes futures en fonction des intrants.
 
-## 🚀 Fonctionnalités Clés
-* **Collecte de Données Intelligente** : Enregistrement structuré des cultures, apports en engrais, humidité et rendements.
-* **Intelligence Décisionnelle (IA)** : Modélisation mathématique ($y = ax + b$) pour prédire la récolte en fonction des intrants.
-* **Visualisation Interactive** : Graphiques dynamiques (Scatter plots, Histogrammes, Box plots) via Plotly.
-* **Persistance SQLite** : Base de données locale sécurisée pour conserver l'historique sans serveur lourd.
-* **Export Professionnel** : Téléchargement du registre au format CSV pour analyse externe.
+### 🚀 Fonctionnalités Clés
+- 📊 **Dashboard Interactif** : Visualisation en temps réel via [Plotly](https://plotly.com/python/).
+- 🧠 **Moteur d'Analyse (IA)** : Calcul automatique des coefficients de corrélation de Pearson.
+- 🗄️ **Base de Données SQLite** : Persistance des données locale et sécurisée.
+- 📱 **Interface Responsive** : Développée avec [Streamlit](https://streamlit.io/).
+
+---
 
 ## 🛠️ Stack Technique
-* **Langage** : Python 3.12
-* **Interface** : [Streamlit](https://streamlit.io/)
-* **Analyse de données** : Pandas & Numpy
-* **Machine Learning** : Scikit-Learn
-* **Visualisation** : Plotly Express
-* **Base de données** : SQLite3
+| Technologie | Utilisation |
+| :--- | :--- |
+| **Python 3.12** | Langage Coeur |
+| **Streamlit** | Interface Utilisateur (UI) |
+| **Scikit-Learn** | Modélisation Prédictive (IA) |
+| **Pandas** | Manipulation de données |
+| **SQLAlchemy** | Gestion de la base de données |
 
-## 📂 Structure du Projet
-```text
-AgroStat_Insight/
-├── app.py                # Point d'entrée principal
-├── components/           # Composants UI (Sidebar, Dashboard)
-├── core/                 # Logique métier (IA, Base de données)
-├── data/                 # Stockage des fichiers SQLite
-└── requirements.txt      # Dépendances du projet
-⚙️ Installation et Lancement
-Cloner le projet :
+---
 
+## ⚙️ Installation et Lancement
+Pour installer ce projet sur votre machine locale, suivez ces étapes :
+
+### 1. Clonage du Dépôt
 ```bash
-git clone [https://github.com/Danielisprogrammer/KENGNE_TACHAGO_DANIEL_VAHID__23U2590_AgroStat-Insight.git]
+git clone [https://github.com/Danielisprogrammer/KENGNE_TACHAGO_DANIEL_VAHID__23U2590_AgroStat-Insight.git](https://github.com/Danielisprogrammer/KENGNE_TACHAGO_DANIEL_VAHID__23U2590_AgroStat-Insight.git)
+cd AgroStat_Insight_v1.0
+2. Configuration de l'EnvironnementBash# Créer l'environnement virtuel
+python3 -m venv venv
 
-```bash
-cd AgroStat_Insight
+# Activer l'environnement
+source venv/bin/activate
 
-Créer l'environnement virtuel :
-
-```bash
-python -m venv venv
-source venv/bin/activate  # Sur Linux/Mac
-
-Installer les dépendances :
-
-```bash
+# Installer les dépendances
 pip install -r requirements.txt
-Lancer l'application :
+3. ExécutionBashstreamlit run app.py
+🧠 Méthodologie StatistiqueLe projet repose sur la Régression Linéaire Simple. L'équation de prédiction est modélisée sous la forme :$$y = ax + b$$Où $y$ est le rendement et $x$ l'engrais. Le score $R^2$ permet de valider la précision du modèle.👨‍💻 DéveloppeurKENGNE TACHAGO DANIEL VAHIDMatricule : 23U2590Niveau : Informatique L2Profil : GitHub | [Portfolio en cours]Développé dans le cadre du TP de Programmation Python - 2026
+### 2. Pourquoi cette version est "Professionnelle" ?
+1.  **Les Badges (en haut)** : Ils affichent dynamiquement la taille du projet et les langages utilisés. Ça fait très "Open Source".
+2.  **Le Tableau (Stack Technique)** : C'est beaucoup plus lisible qu'une simple liste.
+3.  **Les Liens Cliquables** : Les mots comme "Streamlit" ou "Plotly" renvoient vers leurs sites officiels.
+4.  **Le Rendu Mathématique** : L'équation $y = ax + b$ s'affichera proprement grâce au support LaTeX de GitHub.
+5.  **Les Blockquotes** : Le petit `>` au début crée un encadré gris élégant.
 
-``bash
-streamlit run app.py
-
-🧠 Méthodologie Statistique
-L'application utilise le coefficient de Corrélation de Pearson pour mesurer le lien entre l'engrais et le rendement, ainsi qu'une Régression Linéaire Simple pour fournir une équation de prévision fiable.
+### 3. Comment l'envoyer proprement maintenant ?
+Comme tu viens de réussir ton `git push` léger, fais juste ceci pour mettre à jour le README :
 
 ```bash
-Développé avec passion par Daniel Kengne Étudiant en Informatique (L2) - Passionné par le développement Full-Stack et l'IA.
+git add README.md
+git commit -m "Design : Amélioration visuelle du README"
+git push
