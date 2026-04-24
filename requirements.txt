@@ -3,3 +3,4 @@ pandas
 plotly
 scikit-learn
 sqlalchemy
+st-gsheets-connection
