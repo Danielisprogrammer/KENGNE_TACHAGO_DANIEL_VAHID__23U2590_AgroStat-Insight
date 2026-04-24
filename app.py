@@ -27,25 +27,25 @@ def main():
         # On force les colonnes en minuscules pour la base de données
         new_entry.columns = [c.lower() for c in new_entry.columns]
         
-        # Sauvegarde physique dans SQLite
+        # Sauvegarde physique (SQLite + Cloud Google Sheets)
         db.save_data(new_entry)
         
         # Mise à jour de la session pour l'affichage immédiat
         st.session_state.data = db.load_data()
         
-        st.toast("Relevé enregistré dans la base SQL !", icon="✅")
+        st.toast("Relevé enregistré et synchronisé !", icon="☁️")
         st.rerun()
 
     # --- EN-TÊTE DU DASHBOARD ---
     st.title("🌱 AgroStat Insight | Expert Mode")
-    st.markdown(f"**Ingénieur :** Daniel Kengne | **Base de données :** SQLite Active")
+    st.markdown(f"**Ingénieur :** Daniel Kengne | **Base de données :** Cloud Sync Active")
 
     # 2. TRAITEMENT ET NETTOYAGE DES DONNÉES
     if not st.session_state.data.empty:
         # On travaille sur une copie pour éviter les warnings
         df_clean = st.session_state.data.copy()
         
-        # Harmonisation des colonnes (tout en minuscules pour éviter les KeyError)
+        # Harmonisation des colonnes
         df_clean.columns = [c.lower() for c in df_clean.columns]
         
         # Définition des colonnes numériques
@@ -59,10 +59,33 @@ def main():
         df_clean = df_clean.dropna(subset=cols_numeriques)
 
         # 3. AFFICHAGE DES COMPOSANTS (DASHBOARD)
-        # On passe le DataFrame nettoyé aux fonctions de dashboard.py
         render_metrics(df_clean)
         render_charts(df_clean)
         
+        # --- 4. OPTION D'EXPORTATION (NOUVEAU) ---
+        st.divider()
+        st.subheader("📄 Rapport et Exportation")
+        col_exp1, col_exp2 = st.columns([1, 2])
+        
+        with col_exp1:
+            @st.cache_data
+            def convert_df(df_to_convert):
+                # Conversion du DataFrame en CSV encodé en UTF-8
+                return df_to_convert.to_csv(index=False).encode('utf-8')
+
+            csv_file = convert_df(df_clean)
+
+            st.download_button(
+                label="📥 Télécharger les données (CSV)",
+                data=csv_file,
+                file_name='agrostat_insight_export.csv',
+                mime='text/csv',
+                help="Téléchargez l'intégralité du registre pour Excel ou un rapport externe."
+            )
+        
+        with col_exp2:
+            st.caption("💡 Le fichier CSV exporté contient toutes les lignes validées et synchronisées avec le Cloud Google Sheets.")
+
     else:
         # Message si la base est vide
         st.info("👋 Le registre est vide. Ajoutez des données via la barre latérale pour activer les analyses.")
