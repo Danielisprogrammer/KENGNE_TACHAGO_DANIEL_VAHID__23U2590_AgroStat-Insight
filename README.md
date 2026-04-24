@@ -6,7 +6,7 @@
 ## 🖼️ Aperçu du Projet
 *(Remplacez le lien ci-dessous par le chemin de votre capture d'écran une fois ajoutée au dépôt)*
 
-![Capture d'écran de l'application](https://via.placeholder.com/800x450?text=Aperçu+AgroStat+Insight+v1.0)
+![Capture d'écran de l'application]![alt text](<Capture d’écran du 2026-04-24 06-26-53.png>)
 
 ---
 
@@ -33,7 +33,7 @@ AgroStat Insight est une solution de **Data Science** conçue pour aider les exp
 Suivez ces étapes de manière séquentielle pour configurer votre environnement de travail :
 
 ### 1️⃣ Étape 1 : Clonage du Dépôt
-### 1️⃣ Étape 1 : Clonage du Dépôt
+
 Récupérez le code source depuis GitHub :
 
 ```bash
