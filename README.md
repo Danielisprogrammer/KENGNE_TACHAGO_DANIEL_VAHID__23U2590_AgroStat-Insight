@@ -1,5 +1,6 @@
 # 🌱 AgroStat Insight v1.0
 > **Plateforme d'Intelligence Artificielle pour l'Optimisation des Rendements Agricoles.**
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://kengne-tachago-daniel-vahid-23u2590-agrostat-insight.streamlit.app/)
 
 ---
 
