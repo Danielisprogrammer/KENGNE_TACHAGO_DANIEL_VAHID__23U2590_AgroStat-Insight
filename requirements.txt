@@ -2,5 +2,8 @@ streamlit
 pandas
 plotly
 scikit-learn
+statsmodels
+scipy
 sqlalchemy
 st-gsheets-connection
+google-auth
